@@ -11,6 +11,9 @@ use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\EmployeeImport;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
+use Dompdf\Dompdf;
+
+
 
 class EmployeeController extends Controller
 {
@@ -75,6 +78,7 @@ class EmployeeController extends Controller
         $pdf = PDF::loadView('datapagawai-pdf');
         return $pdf->download('data.pdf');
     }
+
 
     public function exportexcel()
     {

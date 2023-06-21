@@ -8,8 +8,8 @@
 
 <div class="content-wrapper"> 
   <!-- Content Header (Page header) -->
-  <div class="content-header">
-    <div class="container-fluid">
+  <div class="content-header mb-5">
+    <div class="container-fluid mb-5">
       <div class="row mb-2">
         <div class="col-sm-6">
           <h1 class="m-0">Data Pegawai</h1>
@@ -23,7 +23,7 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
-  <div class="container">
+  <div class="container mb-5">
     <a href="/tambahpegawai" class="btn btn-success">Tambah +</a> 
       
     <div class="row g-3 align-items-center mt-2"> 
@@ -74,7 +74,7 @@
   
     
   
-    <div class="row">
+    <div class="row mb-5">
        {{-- @if($massage = Session::get('success'))
         <div class="alert alert-success" role="alert">
             {{ $massage}}
@@ -120,8 +120,8 @@
   
         
       </tbody>
-    </table>
-    {{$data->links()}}
+    </table >
+   
     {{----
     <div class="pagination mt-4">
       <ul class="pagination justify-content-center">
@@ -143,7 +143,7 @@
   --}}
     </div>
   </div>
-
+  {{$data->links()}}
 </div> 
 
 
