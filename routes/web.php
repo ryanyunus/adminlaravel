@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EmployeeController; 
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\LoginController;
 use App\Models\Employee;
     
 /*
@@ -33,3 +34,5 @@ Route::get('/delete/{id}',[EmployeeController::class, 'delete'])->name('delete')
 Route::get('/exportpdf',[EmployeeController::class, 'exportpdf'])->name('exportpdf');
 Route::get('/exportexcel',[EmployeeController::class, 'exportexcel'])->name('exportexcel');
 Route::post('/importexcel',[EmployeeController::class, 'importexcel'])->name('importexcel');
+Route::get('/login',[LoginController::class, 'login'])->name('login');
+Route::get('/register',[LoginController::class, 'register'])->name('register');
